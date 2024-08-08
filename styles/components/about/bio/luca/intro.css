@@ -1,0 +1,49 @@
+.intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.intro-text {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.intro-button:hover {
+    background-color: white;
+    color: black;
+}
+
+#secondTextContainer {
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+    width: 100%;
+}

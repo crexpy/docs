@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TCC Docs | Void Unlocker</title>
+    <link rel="icon" href="https://cookingclub.xyz/Attachments/tcc.gif" sizes="100x100">
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/docsstyles.css">
+    <script src="styles/collapsible.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+        <h1><a href="https://cookingclub.xyz/"><img style="border-radius: 10px;" src="https://cdn.cookingclub.xyz/images/tcc.gif" alt="Logo" class="logo"></a></h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="https://cookingclub.bgng.io/">Shop</a></li>
+                <li><a href="https://cookingclub.xyz/media">Media</a></li>
+                <li><a href="https://cookingclub.xyz/reseller">Reseller</a></li>
+                <li><a href="https://cookingclub.statuspage.io/">Status</a></li>
+            </ul>
+        </nav>
+        <a class="header-btn" href="https://discord.gg/cookingclub">Sign Up</a>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Documentation</h2>
+            <ul>
+                <li>
+                    <button class="collapsible">Void Unlocker</button>
+                    <div class="content">
+                        <a href="#information">Information</a>
+                        <a href="#requirements">Requirements</a>
+                        <a href="#installation">Installation</a>
+                        <a href="#injector">Injector</a>
+                        <a href="#troubleshoot">Troubleshoot</a>
+                    </div>
+                </li>
+                <li><a href="radbd.html">raDBD</a></li>
+                <li><a href="pakbypass.html">Pak Bypass</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section id="unlock-all">
+                <h1>Void Unlocker - Unlock All</h1><br><br><br>
+
+                <h2 id="information">Information</h2>
+                    <h4>Where is the unlocker directory?</h4>
+                    <p>In %localappdata% under 'VOID'</p><br>
+
+                    <h4>Why does the User Generated folder take over lib folder?</h4>
+                    <p>So the unlocker has a space to keep your generated files including what prestige and items you selected to use</p><br>
+
+                    <h4>How do I remove the User Generated folder?</h4>
+                    <p>Head into the unlocker directory and remove the folder</p><br>
+
+                    <h4>Why is Discord authorization required?</h4>
+                    <p>The authorization is required to receive your unlocker account</p><br>                    
+
+                    <h4>Character Names</h4>
+                    <a id="downloadLink" href="https://github.com/RegularLunar/Character-Names" target="_blank">https://github.com/RegularLunar/Character-Names</a>
+                    <p>We do not guarantee that all character names are up to date</p><br>                    
+
+                    <h4>Get more mods added to the mod manager</h4>
+                    <p>Download the template and fill out the image, description, title and credits.
+                        <br>If there is no room left on the form, create a new page (copy the file) and adjust the page number.
+                        <br>Once completed, open a ticket to submit the file, along with the mods and images you want added.
+                        <p>Example:</p> <div class="code-block">"page[3]": {</div> ➡ <div class="code-block">"page[4]": {</div>
+                        <br>
+                        <br><a id="downloadLink" href="https://cdn.cookingclub.xyz/template.rar">Download File</a>
+                        <p>We do not guarantee that all or any of your submitted mods will be added.</p><br>
+
+                        <h4 id="paksfolder">Paks folder location</h4>
+                        <div class="embed-container">
+                            <p>Epic Games:</p>
+                            <div class="code-block">
+                                C:\Program Files\Epic Games\DeadByDaylight\DeadByDaylight\Content\Paks
+                            </div>
+                        </div>
+                        <div class="embed-container">
+                            <p>Steam:</p>
+                            <div class="code-block">
+                                C:\Program Files (x86)\Steam\steamapps\common\Dead by Daylight\DeadByDaylight\Content\Paks
+                            </div>
+                        </div><br><br><br><br>
+
+                <br><h2 id="requirements">Requirements</h2>
+                    <h4>.NET 8.0 Desktop Runtime</h4>
+                        <a id="downloadLink" href="https://dotnet.microsoft.com/download/dotnet/8.0" target="_blank">https://dotnet.microsoft.com/download/dotnet/8.0</a>
+                        <p>We recommend installing the SDK Build app as it is an "all in one" version</p>
+                        <br>
+                    <h4>SSL Bypass on Steam</h4>
+                        <a id="downloadLink" href="https://cookingclub.xyz/radbd" target="_blank">https://cookingclub.xyz/radbd</a>
+                        <p>Playing on Steam requires an SSL Bypass, which can be found in raDBD</p><br><br><br>
+
+                <br><h2 id="installation">Installation</h2>
+                <ol>
+                    <li>Download the unlocker from the <a id="downloadLink" href="https://cookingclub.xyz/unlocker" target="_blank">official website</a></li>
+                    <br>
+                    <li>Extract the .rar file and run the Loader as Administrator</li><br>
+                    
+                    <li>Accept the Discord authorization that opens in your web browser<br>
+                    
+                    <br><li>Go to the 'Market' tab<br>
+                    <br>1. In the 'Profile' section, select the prestige level and item amount you want
+                    <br>2. Click 'Select Path' and enter your <a href="#paksfolder">Paks folder location</a>
+                    <br>3. After that, click 'Generate' and wait for the process to finish</li>
+                    
+                    <br><li>Go to the 'Unlocker' tab<br>
+                    <br>1. In the 'Config' section, choose your settings
+                    <br>2. Click 'Start' and press 'Yes' on the Fiddler root certificate showing up
+                    <br>3. After accepting the Fiddler Root, start your game
+                    <br><br><br><i>Your cookies will be detected automatically when you start your game</i></li>                   
+                </ol><br><br><br>
+                
+                <br><h2 id="injector">Injector</h2>
+                <ol>
+                    <li>Download the unlocker from the <a id="downloadLink" href="https://cookingclub.xyz/unlocker" target="_blank">official website</a></li>
+                    <br>
+                    <li>Extract the .rar file and run the Loader as Administrator</li><br>
+                    
+                    <li>Accept the Discord authorization that opens in your web browser<br>
+                    
+                    <br><li>Go to the 'Unlocker' tab<br>
+                    <br>1. Click 'Start' and press 'Yes' on the Fiddler root certificate prompt
+                    <br>2. After accepting the Fiddler Root, start your game
+                    <br>3. Once you are in the game, you will find your BHVR session under 'Cookie'; copy it<br><br>
+                    
+                    <li>Go to the 'Market' tab<br>
+                    <br>1. In the 'Injection' section, paste your newly acquired BHVR session
+                    <br>2. Choose your settings
+                    <br>3. After that, click 'Start' and wait for the process to finish</li>
+                    <br><br><i>BHVR session example: bhvrSession=FQXbYFG2T6f5jCbradAlg.hp3ROP8I6iV3Tzjsi....</i></li>
+                </ol><br><br><br>
+                
+                <br><h2 id="troubleshoot">Troubleshoot</h2>
+                <h4>No Network Connection</h4>
+                <p>Playing on Steam requires an SSL Bypass - Learn more here: <a href="#requirements">Requirements</a></p><br>
+                <p>Other causes might be:</p>
+                <ol>
+                    <li>No internet connection - <i>Make sure you have a working internet connection</i></li>
+                    <br><li>You are banned</li>
+                </ol><br>
+
+                <h4>How to use the raDBD SSL Bypass</h4>
+                <video width="620" height="350" controls>
+                    <source src="https://i.e-z.host/ylftjwz1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br><br>
+
+                <h4>Invalid bhvrSession</h4>
+                <p>Enter the correct bhvrSession</p><br>
+
+                <h4>Initialization Error</h4>
+                <p>Keep all the files from the VOID folder together</p><br>
+
+                <h4>The input string '0.0' was not in a correct format</h4>
+                <p>Select an amount for Prestige and Items - <i>Minimum of 2</i></p><br>
+                
+                <h4>Perks, Addons, and Items resetting after game</h4>
+                <p>Simply open the Bloodweb, then open the loadout and switch the presets back and forth</p>
+                <video width="620" height="350" controls>
+                    <source src="https://i.e-z.host/x0wt0j5p.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br><br>
+                
+                <h4>Failed to create Fiddler root certificate</h4>
+                <p>Click 'Yes' when the Fiddler root certificate prompt appears</p>
+                <p>If the certificate no longer appears, go to the unlocker directory and delete the 'cert' folder</p><br>
+                
+                <h4>Unexpected Parameters Error</h4>
+                <p>Delete the config.json in the VOID folder and enter the correct path when prompted</p><br>
+
+                <h4>Save Game Error</h4>
+                <p>Verify your game files</p><br>
+                
+            </section>
+        </div>
+    </div>
+</body>
+</html>

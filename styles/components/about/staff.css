@@ -1,0 +1,119 @@
+.staff__container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--clr-dark);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.staff__box {
+    flex: 1 1 60%;
+    padding: 15px;
+    background-color: var(--clr-lightish);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.staff__box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.feature__icon {
+    width: 125px;
+    height: 125px;
+    margin: 10px auto;
+    border-radius: 50%; 
+    border: 4px solid var(--clr-dark); 
+}
+
+.staff__box p {
+    margin: 10px 0 0 0;
+    font-weight: bold; 
+    font-size: 0.9em; 
+}
+
+.staff__box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+/* xs */
+@media (min-width: 475px) {
+    .staff__box {
+        flex: 1 1 60%;
+        padding: 15px;
+    }
+    .feature__icon {
+        width: 125px;
+        height: 125px;
+        margin: 10px auto;
+    }
+    .staff__box p {
+        margin: 10px 0 0 0;
+        font-weight: bold; 
+        font-size: 0.9em; 
+    }
+} 
+/* sm */
+@media (min-width: 640px) { 
+    .staff__box {
+        flex: 1 1 40%;
+        padding: 15px;
+    }
+    .feature__icon {
+        width: 135px;
+        height: 135px;
+        margin: 10px auto;
+    }
+    .staff__box p {
+        margin: 10px 0 0 0;
+        font-weight: bold; 
+        font-size: 0.9em; 
+    }
+} 
+/* md */
+@media (min-width: 768px) { 
+
+} 
+/* Lg */
+@media (min-width: 1024px) { 
+    .staff__box {
+        flex: 1 1 20%;
+        padding: 10px;
+    }
+    .feature__icon {
+        width: 145px;
+        height: 145px;
+        margin: 10px auto;
+    }
+    .staff__box p {
+        margin: 10px 0 0 0;
+        font-weight: bold; 
+        font-size: 1.1em; 
+    }
+}
+/* xL */
+@media (min-width: 1280px) { 
+    .staff__box {
+        flex: 1 1 20%;
+        padding: 20px;
+    }
+    .feature__icon {
+        width: 165px;
+        height: 165px;
+        margin: 10px auto;
+    }
+} 
+/* 2xL */
+@media (min-width: 1536px) { 
+   
+} 
