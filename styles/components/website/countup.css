@@ -1,0 +1,71 @@
+[countup]{
+    text-align  : center;
+}
+
+.countup-wrapper {
+    position: relative; /* Changed from absolute to relative */
+    bottom: 10px; /* Keep if you still want some positioning from the bottom */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 20px 0; /* Adds padding above and below the content */
+    margin-top: 50px; /* Adds margin at the top if you're no longer sticking to bottom */
+    border-radius: 10px; /* Optional: rounds the corners */
+}
+
+.countup {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+/* xs */
+@media (min-width: 475px) {
+    .countup-wrapper {
+
+    }
+    
+.countup {
+    font-size: 20px;
+}
+} 
+/* sm */
+ @media (min-width: 640px) { 
+
+} 
+/* md */
+@media (min-width: 768px) { 
+    
+} 
+/* Lg */
+@media (min-width: 1024px) { 
+    .countup {
+             /* Adds margin at the top if you're no longer sticking to bottom */
+
+        font-size: 23px;
+    }
+}
+/* xL */
+@media (min-width: 1280px) { 
+    .countup {
+         /* Adds margin at the top if you're no longer sticking to bottom */
+
+        font-size: 25px;
+    }
+} 
+/* 2xL */
+@media (min-width: 1536px) { 
+    .countup {
+         /* Adds margin at the top if you're no longer sticking to bottom */
+
+        font-size: 25px;
+    }
+} 
