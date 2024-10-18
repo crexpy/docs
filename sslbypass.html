@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCC Docs | SSL Bypass</title>
+    <title>TCC Docs | Void Unlocker</title>
     <link rel="icon" href="https://cookingclub.xyz/Attachments/tcc.gif" sizes="100x100">
     <link rel="stylesheet" href="styles/modern-normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -11,6 +9,8 @@
     <link rel="stylesheet" href="styles/utils.css">
     <link rel="stylesheet" href="styles/docsstyles.css">
     <script src="styles/collapsible.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="header">
@@ -34,14 +34,112 @@
                 <li><a href="radbd">raDBD</a></li>
                 <li>
                     <button class="collapsible">SSL Bypass</button>
+                    <div class="content">
+                        <a href="#information">Information</a>
+                        <a href="#requirements">Requirements</a>
+                        <a href="#installation">Installation</a>
+                        <a href="#troubleshoot">Troubleshoot</a>
+                    </div>
                 </li>
             </ul>
         </div>
 
-        <main style="margin-left: 430px; margin-top: 300px; padding: 20px; max-width: calc(100% - 280px);">
-            <h2 style="text-align: center; font-size: 35px; margin-bottom: 20px;">WIP...</h2>
-            </ul>
-        </main>
+        <div class="main-content">
+            <section id="unlock-all">
+                <h1>Void Unlocker - SSL Bypass</h1><br><br><br>
+
+                <h2 id="information">Information</h2>
+                    <h4>Video Tutorial</h4>
+                    <a id="downloadLink" href="https://youtu.be/Fv8NHQgNvOo" target="_blank">https://youtu.be/Fv8NHQgNvOo</a><br><br>
+                
+                    <h4 id="ssldirectory">Where is the SSL Bypass directory?</h4>
+                    <p>In %localappdata% under 'VOID-SSL'</p><br>
+
+                    <h4>Why is Discord authorization required?</h4>
+                    <p>The authorization is required to receive your unlocker account</p><br>                    
+
+                    <h4>What data is collected for the tool?</h4>
+                    <p>Discord username and ID, as well as your HWID</p><br>   
+
+                        <h4 id="paksfolder">Default Steam Paks folder location</h4>
+                        <div class="embed-container">
+                            <div class="code-block">
+                                C:\Program Files (x86)\Steam\steamapps\common\Dead by Daylight\DeadByDaylight\Content\Paks
+                            </div>
+                        </div><br><br><br><br>
+
+                <br><h2 id="requirements">Requirements</h2>
+                    <h4>.NET 8.0 Desktop Runtime</h4>
+                        <a id="downloadLink" href="https://dotnet.microsoft.com/download/dotnet/8.0" target="_blank">https://dotnet.microsoft.com/download/dotnet/8.0</a>
+                        <p>We recommend installing the SDK Build app as it is an "all in one" version</p><br>
+
+                        <h4>Disable Windows Features</h4>
+                        <p>Disable Core Isolation, Secure Boot and TPM</p><br>
+
+                        <h4>Uninstall MSI Afterburner</h4>
+                        <p>If the software exists uninstall it</p><br><br><br>
+
+
+                <br><h2 id="installation">Installation</h2>
+                <ol>
+                    <li>Download the Loader with the link in your <a id="downloadLink" href="https://cookingclub.bgng.io/customer/orders" target="_blank">purchase order</a></li><br>
+                    
+                    <li>Extract the .rar file and run the Loader as Administrator</li><br>
+
+                    <li>Accept the Discord authorization that opens in your web browser</li><br>
+
+                    <li>Enter the license key that you received after purchase</li>
+
+                    <br><li>Go to the 'Unlocker' tab<br>
+                    <br>1. In the 'Config' section, enable 'Bypass' (Should be enabled by default)
+                    <br>2. Customize the rest of your settings
+                    <br>3. Click 'Start' and press 'Yes' on the Fiddler root certificate showing up
+                    <br>4. After accepting the Fiddler Root, start your game
+                    <br><br><br><i>Your cookies will be detected automatically when you start your game</i></li>                   
+                </ol><br><br><br>
+                
+                <br><h2 id="troubleshoot">Troubleshoot</h2>
+                <h4>No internet connection on entire PC</h4>
+                <p>Disable the proxy that was enabled after starting the Unlocker</p><br>
+
+                <h4>No Network Connection</h4>
+                <p>Driver might no be loaded - see below</p><br>
+                <p>Other causes might be:</p>
+                <ol>
+                    <li>No internet connection - <i>Make sure you have a working internet connection</i></li>
+                    <br><li>You are banned</li>
+                </ol><br>
+                
+                <h4>Driver not loading (No Network Connection)</h4>
+                <p>Download <a id="downloadLink" href="https://www.sordum.org/9480/defender-control-v2-1/" target="_blank">Sordum Defender Control</a> to make sure your antivirus is fully disabled</p>
+                <p>Download this <a id="downloadLink" href="https://cdn.cookingclub.xyz/DriverFix.reg" target="_blank">Registry file</a> to make sure your vulnerable driver block list is disabled
+                    <br><i>Restart Computer after using it</i></p><br>
+
+                <h4>Driver Failed To Load</h4>
+                <p>Follow the steps given above and make sure you have all <a href="#requirements">requirements</p><br>
+
+                <h4>Invalid Key | Error Code: 1000</h4>
+                <p>Enter a valid key<br><br>
+                If the prompt doesn’t appear go into the bypass directory; open config.json and add the 'key' value at the bottom
+                <div class="embed-container">
+                    <div class="code-block">
+                        "nameChanger": "",<br>
+                        "key": "ENTER KEY HERE",<br>
+                        "exeName": "EXE NAME.exe"<br>
+                      }
+                    </div>
+                </div>
+                 <img src="https://i.e-z.host/eetqh2ew.png" width="592" height="138" alt="Description of the image"></p><br>
+
+                <h4>Hwid Mismatch | Error Code: 1001</h4>
+                <p>We do not allow account sharing<br> 
+                If you are on a new device or if this is an accidental issue, open a ticket for an HWID reset</p><br>
+            
+                <h4>Decryption Failed | Error Code: 1003</h4>
+                <p>Fix is individual, open a ticket and provide us with information about your OS</p><br>
+            
+            </section>
+        </div>
     </div>
 </body>
 </html>
