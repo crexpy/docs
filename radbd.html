@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles/components/header.css">
     <link rel="stylesheet" href="styles/utils.css">
     <link rel="stylesheet" href="styles/docsstyles.css">
+    <link rel="stylesheet" href="styles/langswitch.css">
     <script src="styles/collapsible.js" defer></script>
+    <script src="styles/langswitch.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,10 +19,9 @@
         <h1><a href="https://cookingclub.xyz/"><img style="border-radius: 10px;" src="https://cdn.cookingclub.xyz/logo.png" alt="Logo" class="logo"></a></h1>
         <nav>
             <ul class="nav__links">
-                <li><a href="https://cookingclub.bgng.io/">Shop</a></li>
+                <li><a href="https://cookingclub.xyz/shop">Shop</a></li>
                 <li><a href="https://cookingclub.xyz/media">Media</a></li>
-                <li><a href="https://cookingclub.xyz/reseller">Reseller</a></li>
-                <li><a href="https://cookingclub.statuspage.io/">Status</a></li>
+                <li><a href="https://status.cookingclub.xyz">Status</a></li>
             </ul>
         </nav>
         <a class="header-btn" href="https://discord.gg/cookingclub">Discord</a>
@@ -49,12 +50,8 @@
                 <h1>raDBD - External Cheat</h1><br><br><br>
 
                 <h2 id="information">Information</h2>
-                    <h4>Do I get my lost time compensated?</h4>
-                    <p>Lost time during updates will be compensated</p><br>
-
-                    <h4>What perks can I use for the speedhack?</h4>
-                    <p>Survivor: Boil Over & Ace in the Hole<br>
-                       Killer: Distressing</p><br>
+                        <h4>Do I get my lost time compensated?</h4>
+                        <p>Lost time during updates will be compensated</p><br>
 
                        <h4>What's the difference between the Void unlocker and the one in the cheat?</h4>
                        <p>The cheat's unlocker isn't ours and can't be customized. It randomizes your prestige and items</p><br>
@@ -143,6 +140,13 @@
                 <p>Reinstall DX Runtime</p><br>
                 
             </section>
+        </div>
+    </div>
+    <div class="floating-language-button">
+        <button id="languageToggle" onclick="toggleLanguageOptions(event)">🌐 Language</button>
+        <div class="language-options" id="languageOptions">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('de')">Deutsch</button>
         </div>
     </div>
 </body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TCC Docs | SSL Bypass</title>
+    <link rel="icon" href="https://cdn.cookingclub.xyz/logo.png" sizes="100x100">
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/docsstyles.css">
+    <link rel="stylesheet" href="styles/langswitch.css">
+    <script src="styles/collapsible.js" defer></script>
+    <script src="styles/langswitch.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+        <h1><a href="https://cookingclub.xyz/"><img style="border-radius: 10px;" src="https://cdn.cookingclub.xyz/logo.png" alt="Logo" class="logo"></a></h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="https://cookingclub.xyz/shop">Shop</a></li>
+                <li><a href="https://cookingclub.xyz/media">Media</a></li>
+                <li><a href="https://status.cookingclub.xyz">Status</a></li>
+            </ul>
+        </nav>
+        <a class="header-btn" href="https://discord.gg/cookingclub">Discord</a>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Dokumentation</h2>
+            <ul>
+                <li><a href="de-unlocker">Void Unlocker</a></li>
+                <li><a href="de-radbd">raDBD</a></li>
+                <li>
+                    <button class="collapsible">SSL Bypass</button>
+                    <div class="content">
+                        <a href="#information">Informationen</a>
+                        <a href="#requirements">Anforderungen</a>
+                        <a href="#installation">Installation</a>
+                        <a href="#troubleshoot">Fehlerbehebung</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section id="unlock-all">
+                <h1>Void Unlocker - SSL Bypass</h1><br><br><br>
+
+                <h2 id="information">Informationen</h2>
+                    <h4>Video Tutorial</h4>
+                    <a id="downloadLink" href="https://youtu.be/Fv8NHQgNvOo" target="_blank">https://youtu.be/Fv8NHQgNvOo</a><br><br>
+                
+                    <h4 id="ssldirectory">Wo befindet sich das SSL Bypass Verzeichnis?</h4>
+                    <p>In %localappdata% unter 'VOID-SSL'</p><br>
+                    
+                    <h4>Warum ist die Discord Autorisierung erforderlich?</h4>
+                    <p>Die Autorisierung ist erforderlich, um dein Unlocker Konto zu erhalten</p><br>
+                    
+                    <h4>Welche Daten werden für das Tool gesammelt?</h4>
+                    <p>Discord Benutzername und ID sowie deine HWID</p><br>                    
+
+                    <h4 id="paksfolder">Standard Steam Paks Ordner standort</h4>
+                        <div class="embed-container">
+                            <div class="code-block">
+                                C:\Program Files (x86)\Steam\steamapps\common\Dead by Daylight\DeadByDaylight\Content\Paks
+                            </div>
+                        </div><br><br><br><br>
+
+                <br><h2 id="requirements">Anforderungen</h2>
+                    <h4>.NET 8.0 Desktop Runtime</h4>
+                        <a id="downloadLink" href="https://dotnet.microsoft.com/download/dotnet/8.0" target="_blank">https://dotnet.microsoft.com/download/dotnet/8.0</a>
+                        <p>Wir empfehlen, die SDK Build app zu installieren, da sie eine 'All in One' version ist</p><br>
+
+                        <h4>Deaktiviere Windows Funktionen</h4>
+                        <p>Deaktiviere Kernisolierung, Secure Boot (Sicherer Start) und TPM</p><br>
+                        
+                        <h4>Anti-Cheat Software</h4>
+                        <p>Deinstalliere sowohl Vanguard als auch Faceit, falls vorhanden</p><br>
+                        
+                        <h4>Deinstalliere MSI Afterburner</h4>
+                        <p>Falls die Software vorhanden ist, deinstalliere sie</p><br><br><br>                        
+
+
+                <br><h2 id="installation">Installation</h2>
+                    <ol>
+                        <li>Lade den Loader mit dem Link in deiner <a id="downloadLink" href="https://cookingclub.bgng.io/customer/orders" target="_blank">Bestellbestätigung</a> herunter</li><br>
+                        
+                        <li>Entpacke die .rar Datei und führe den Loader als Administrator aus</li><br>
+                        
+                        <li>Akzeptiere die Discord Autorisierung, die in deinem Webbrowser geöffnet wird</li><br>
+                        
+                        <li>Gib den Lizenzschlüssel ein, den du nach dem Kauf erhalten hast</li>
+                        
+                        <br><li>Gehe zum Tab 'Unlocker'<br>
+                        <br>1. Aktiviere im Bereich 'Config' die Option 'Bypass' (sollte standardmäßig aktiviert sein)
+                        <br>2. Passe die restlichen Einstellungen nach Bedarf an
+                        <br>3. Klicke auf 'Start' und bestätige mit 'Ja' das erscheinende Fiddler Root Zertifikat
+                        <br>4. Nachdem du den Fiddler Root akzeptiert hast, starte dein Spiel
+                        <br><br><br><i>Deine Cookies werden automatisch erkannt, wenn du dein Spiel startest</i></li>                   
+                    </ol><br><br><br>
+                        
+                
+                <br><h2 id="troubleshoot">Fehlerbehebung</h2>
+                <h4>Keine Internetverbindung auf dem gesamten PC</h4>
+                <p>Deaktiviere die Proxy, welche nach dem Starten des Unlockers aktiviert wurde</p><br> 
+
+                <h4>No Network Connection</h4>
+                <p>Der Treiber ist möglicherweise nicht geladen - siehe unten</p><br>
+                <p>Andere mögliche Ursachen könnten sein:</p>                
+                <ol>
+                    <li>Keine Internetverbindung - <i>Stelle sicher, dass du eine funktionierende Internetverbindung hast</i></li>
+                    <br><li>Du bist gebannt</li>
+                </ol><br>
+                
+                <h4>Treiber lädt nicht (No Network Connection)</h4>
+                <p>Lade <a id="downloadLink" href="https://www.sordum.org/9480/defender-control-v2-1/" target="_blank">Sordum Defender Control</a> herunter, um sicherzustellen, dass dein Antivirus vollständig deaktiviert ist</p>
+                <p>Lade diese <a id="downloadLink" href="https://cdn.cookingclub.xyz/DriverFix.reg" target="_blank">Registry Datei</a> herunter, um sicherzustellen, dass deine Liste der anfälligen Treiber deaktiviert wird
+                    <br><i>Starte den Computer nach der Verwendung neu</i></p><br>                
+
+                <h4>Driver Failed To Load</h4>
+                <p>Folge den oben angegebenen Schritten und stelle sicher, dass du alle <a href="#requirements">Anforderungen</a> erfüllst</p><br>
+
+                <h4>Invalid Key | Error Code: 1000</h4>
+                <p>Gib einen gültigen Produktschlüssel ein<br><br>
+                    Wenn die Eingabeaufforderung nicht erscheint, gehe in das Bypass Verzeichnis; öffne config.json und füge den 'key' Wert unten hinzu                    
+                <div class="embed-container">
+                    <div class="code-block">
+                        "nameChanger": "",<br>
+                        "key": "PRODUKTSCHLÜSSEL",<br>
+                        "exeName": "EXE NAME.exe"<br>
+                      }
+                    </div>
+                </div>
+                 <img src="https://i.e-z.host/eetqh2ew.png" width="592" height="138" alt="Description of the image"></p><br>
+
+                <h4>Hwid Mismatch | Error Code: 1001</h4>
+                <p>Das Teilen von Konten ist nicht erlaubt<br> 
+                Wenn du auf einem neuen Gerät bist oder dies ein unbeabsichtigtes Problem ist, öffne ein Ticket für einen HWID-Reset</p><br>                    
+            
+                <h4>Decryption Failed | Error Code: 1003</h4>
+                <p>Die Lösung ist individuell, öffne ein Ticket und gib uns Informationen über dein Betriebssystem</p><br>
+            
+            </section>
+        </div>
+    </div>
+    <div class="floating-language-button">
+        <button id="languageToggle" onclick="toggleLanguageOptions(event)">🌐 Sprache</button>
+        <div class="language-options" id="languageOptions">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('de')">Deutsch</button>
+        </div>
+    </div>
+</body>
+</html>

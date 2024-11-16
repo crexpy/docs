@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles/components/header.css">
     <link rel="stylesheet" href="styles/utils.css">
     <link rel="stylesheet" href="styles/docsstyles.css">
+    <link rel="stylesheet" href="styles/langswitch.css">
     <script src="styles/collapsible.js" defer></script>
+    <script src="styles/langswitch.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,10 +19,9 @@
         <h1><a href="https://cookingclub.xyz/"><img style="border-radius: 10px;" src="https://cdn.cookingclub.xyz/logo.png" alt="Logo" class="logo"></a></h1>
         <nav>
             <ul class="nav__links">
-                <li><a href="https://cookingclub.bgng.io/">Shop</a></li>
+                <li><a href="https://cookingclub.xyz/shop">Shop</a></li>
                 <li><a href="https://cookingclub.xyz/media">Media</a></li>
-                <li><a href="https://cookingclub.xyz/reseller">Reseller</a></li>
-                <li><a href="https://cookingclub.statuspage.io/">Status</a></li>
+                <li><a href="https://status.cookingclub.xyz">Status</a></li>
             </ul>
         </nav>
         <a class="header-btn" href="https://discord.gg/cookingclub">Discord</a>
@@ -36,7 +37,6 @@
                         <a href="#information">Information</a>
                         <a href="#requirements">Requirements</a>
                         <a href="#installation">Installation</a>
-                        <a href="#injector">Injector</a>
                         <a href="#troubleshoot">Troubleshoot</a>
                     </div>
                 </li>
@@ -69,15 +69,6 @@
                     <a id="downloadLink" href="https://github.com/RegularLunar/Character-Names" target="_blank">https://github.com/RegularLunar/Character-Names</a>
                     <p>We do not guarantee that all character names are up to date</p><br>                    
 
-                    <h4>Get more mods added to the mod manager</h4>
-                    <p>Download the template and fill out the image, description, title and credits.
-                        <br>If there is no room left on the form, create a new page (copy the file) and adjust the page number.
-                        <br>Once completed, open a ticket to submit the file, along with the mods and images you want added.
-                        <p>Example:</p> <div class="code-block">"page[3]": {</div> ➡ <div class="code-block">"page[4]": {</div>
-                        <br>
-                        <br><a id="downloadLink" href="https://cdn.cookingclub.xyz/template.rar">Download File</a>
-                        <p>We do not guarantee that all or any of your submitted mods will be added.</p><br>
-
                         <h4 id="paksfolder">Paks folder location</h4>
                         <div class="embed-container">
                             <p>Epic Games:</p>
@@ -103,8 +94,8 @@
                         <p>We recommend installing the SDK Build app as it is an "all in one" version</p>
                         <br>
                     <h4>SSL Bypass on Steam</h4>
-                        <a id="downloadLink" href="https://cookingclub.xyz/radbd" target="_blank">https://cookingclub.xyz/radbd</a>
-                        <p>Playing on Steam requires an SSL Bypass, which can be found in raDBD</p><br><br><br>
+                        <a id="downloadLink" href="https://cookingclub.xyz/sslbypass" target="_blank">https://cookingclub.xyz/sslbypass</a>
+                        <p>Playing on Steam requires an SSL Bypass, which can be found in the link</p><br><br><br>
 
                 <br><h2 id="installation">Installation</h2>
                 <ol>
@@ -126,26 +117,6 @@
                     <br><br><br><i>Your cookies will be detected automatically when you start your game</i></li>                   
                 </ol><br><br><br>
                 
-                <br><h2 id="injector">Injector</h2>
-                <ol>
-                    <li>Download the unlocker from the <a id="downloadLink" href="https://cookingclub.xyz/unlocker" target="_blank">official website</a></li>
-                    <br>
-                    <li>Extract the .rar file and run the Loader as Administrator</li><br>
-                    
-                    <li>Accept the Discord authorization that opens in your web browser<br>
-                    
-                    <br><li>Go to the 'Unlocker' tab<br>
-                    <br>1. Click 'Start' and press 'Yes' on the Fiddler root certificate prompt
-                    <br>2. After accepting the Fiddler Root, start your game
-                    <br>3. Once you are in the game, you will find your BHVR session under 'Cookie'; copy it<br><br>
-                    
-                    <li>Go to the 'Market' tab<br>
-                    <br>1. In the 'Injection' section, paste your newly acquired BHVR session
-                    <br>2. Choose your settings
-                    <br>3. After that, click 'Start' and wait for the process to finish</li>
-                    <br><br><i>BHVR session example: bhvrSession=FQXbYFG2T6f5jCbradAlg.hp3ROP8I6iV3Tzjsi....</i></li>
-                </ol><br><br><br>
-                
                 <br><h2 id="troubleshoot">Troubleshoot</h2>
                 <h4>No internet connection on entire PC</h4>
                 <p>Disable the proxy that was enabled after starting the Unlocker</p><br>
@@ -157,12 +128,6 @@
                     <li>No internet connection - <i>Make sure you have a working internet connection</i></li>
                     <br><li>You are banned</li>
                 </ol><br>
-
-                <h4>How to use the raDBD SSL Bypass</h4>
-                <video width="620" height="350" controls>
-                    <source src="https://i.e-z.host/ylftjwz1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video><br><br>
 
                 <h4>Invalid bhvrSession</h4>
                 <p>Enter the correct bhvrSession</p><br>
@@ -193,5 +158,13 @@
             </section>
         </div>
     </div>
+    <div class="floating-language-button">
+        <button id="languageToggle" onclick="toggleLanguageOptions(event)">🌐 Language</button>
+        <div class="language-options" id="languageOptions">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('de')">Deutsch</button>
+        </div>
+    </div>
+    
 </body>
 </html>

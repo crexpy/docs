@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TCC Docs | Void Unlocker</title>
+    <link rel="icon" href="https://cdn.cookingclub.xyz/logo.png" sizes="100x100">
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/utils.css">
+    <link rel="stylesheet" href="styles/docsstyles.css">
+    <link rel="stylesheet" href="styles/langswitch.css">
+    <script src="styles/collapsible.js" defer></script>
+    <script src="styles/langswitch.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+        <h1><a href="https://cookingclub.xyz/"><img style="border-radius: 10px;" src="https://cdn.cookingclub.xyz/logo.png" alt="Logo" class="logo"></a></h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="https://cookingclub.xyz/shop">Shop</a></li>
+                <li><a href="https://cookingclub.xyz/media">Media</a></li>
+                <li><a href="https://status.cookingclub.xyz">Status</a></li>
+            </ul>
+        </nav>
+        <a class="header-btn" href="https://discord.gg/cookingclub">Discord</a>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Dokumentation</h2>
+            <ul>
+                <li>
+                    <button class="collapsible">Void Unlocker</button>
+                    <div class="content">
+                        <a href="#information">Informationen</a>
+                        <a href="#requirements">Anforderungen</a>
+                        <a href="#installation">Installation</a>
+                        <a href="#troubleshoot">Fehlerbehebung</a>
+                    </div>
+                </li>
+                <li><a href="de-radbd">raDBD</a></li>
+                <li><a href="de-sslbypass">SSL Bypass</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section id="unlock-all">
+                <h1>Void Unlocker - Unlock All</h1><br><br><br>
+
+                <h2 id="information">Informationen</h2>
+                    <h4>Video Tutorial</h4>
+                    <a id="downloadLink" href="https://youtu.be/x7vTLivnRj8" target="_blank">https://youtu.be/x7vTLivnRj8</a><br><br>
+                
+                    <h4>Wo ist das Unlocker verzeichnis?</h4>
+                    <p>In %localappdata% unter 'VOID'</p><br>
+
+                    <h4>Warum übernimmt der "User Generated" Ordner den "lib" Ordner?</h4>
+                    <p>Damit der Unlocker Platz hat, um deine generierten Dateien zu speichern, einschließlich der von dir ausgewählten Prestige- und Gegenstände</p><br>                    
+
+                    <h4>Wie entferne ich den "User Generated" Ordner?</h4>
+                    <p>Gehe in das Unlocker verzeichnis und lösche den Ordner</p><br>
+                    
+                    <h4>Warum ist eine Discord Autorisierung erforderlich?</h4>
+                    <p>Die Autorisierung ist erforderlich, um dein Unlocker Konto zu erhalten</p><br>                                      
+
+                    <h4>Characternamen</h4>
+                    <a id="downloadLink" href="https://github.com/RegularLunar/Character-Names" target="_blank">https://github.com/RegularLunar/Character-Names</a>
+                    <p>Wir garantieren nicht, dass alle Charakternamen aktuell sind</p><br>                    
+
+                        <h4 id="paksfolder">Paks Ordner verzeichnis</h4>
+                        <div class="embed-container">
+                            <p>Epic Games:</p>
+                            <div class="code-block">
+                                C:\Program Files\Epic Games\DeadByDaylight\DeadByDaylight\Content\Paks
+                            </div>
+                        </div>
+                        <div class="embed-container">
+                            <p>Steam:</p>
+                            <div class="code-block">
+                                C:\Program Files (x86)\Steam\steamapps\common\Dead by Daylight\DeadByDaylight\Content\Paks
+                            </div>
+                        <div class="embed-container">
+                            <p>Xbox Game Pass:</p>
+                            <div class="code-block">
+                                C:\XboxGames\Dead By Daylight\Content\DeadByDaylight\Content\Paks
+                            </div>
+                        </div><br><br><br><br>
+
+                <br><h2 id="requirements">Anforderungen</h2>
+                    <h4>.NET 8.0 Desktop Runtime</h4>
+                        <a id="downloadLink" href="https://dotnet.microsoft.com/download/dotnet/8.0" target="_blank">https://dotnet.microsoft.com/download/dotnet/8.0</a>
+                        <p>Wir empfehlen, die SDK Build app zu installieren, da sie eine 'All in One' version ist</p>
+                        <br>
+                    <h4>SSL Bypass auf Steam</h4>
+                        <a id="downloadLink" href="https://cookingclub.xyz/sslbypass" target="_blank">https://cookingclub.xyz/sslbypass</a>
+                        <p>Das Spielen auf Steam erfordert einen SSL Bypass, der im link gefunden werden kann</p><br><br><br>
+
+                <br><h2 id="installation">Installation</h2>
+                    <ol>
+                        <li>Lade den Unlocker von der <a id="downloadLink" href="https://cookingclub.xyz/unlocker" target="_blank">offiziellen Webseite</a> herunter</li>
+                        <br>
+                        <li>Extrahiere die .rar Datei und führe den Loader als Administrator aus</li><br>
+                            
+                        <li>Akzeptiere die Discord Autorisierung, die in deinem Webbrowser geöffnet wird<br>
+                            
+                        <br><li>Gehe zum Tab 'Market'<br>
+                        <br>1. Wähle im Abschnitt 'Profile' das gewünschte Prestige Level und die Anzahl der Items
+                        <br>2. Klicke auf 'Select Path' und gib deinen <a href="#paksfolder">Paks Ordner</a> an
+                        <br>3. Klicke danach auf 'Generate' und warte, bis der Prozess abgeschlossen ist</li>
+                            
+                        <br><li>Gehe zum Tab 'Unlocker'<br>
+                        <br>1. Wähle im Abschnitt 'Config' deine Einstellungen
+                        <br>2. Klicke auf 'Start' und bestätige mit 'Ja' das erscheinende Fiddler Root Zertifikat
+                        <br>3. Nachdem du den Fiddler Root akzeptiert hast, starte dein Spiel
+                        <br><br><br><i>Deine Cookies werden automatisch erkannt, wenn du dein Spiel startest</i></li>
+                    </ol>
+                                    
+                </ol><br><br><br>
+                
+                <br><h2 id="troubleshoot">Fehlerbehebung</h2>
+                <h4>Keine Internetverbindung auf dem gesamten PC</h4>
+                <p>Deaktiviere die Proxy, welche nach dem Starten des Unlockers aktiviert wurde</p><br>                
+
+                <h4>No Network Connection</h4>
+                <p>Das Spielen auf Steam erfordert einen SSL Bypass - Weitere Informationen hier: <a href="#requirements">Anforderungen</a></p><br>
+                <p>Andere mögliche Ursachen könnten sein:</p>
+                <ol>
+                    <li>Keine Internetverbindung - <i>Stelle sicher, dass du eine funktionierende Internetverbindung hast</i></li>
+                    <br><li>Du bist gebannt</li>
+                </ol><br>
+
+                <h4>Invalid bhvrSession</h4>
+                <p>Gebe eine korrekte bhvrSession an</p><br>
+
+                <h4>Initialization Error</h4>
+                <p>Behalte alle Dateien aus dem VOID Ordner zusammen</p><br>
+
+                <h4>The input string '0.0' was not in a correct format</h4>
+                <p>Wähle eine Menge für Prestige und Items - <i>Mindestens 2</i></p><br>
+                
+                <h4>Perks, Addons, and Items setzen sich zurück</h4>
+                <p>Öffne einfach das Bloodweb, öffne dann das Loadout und wechsle die Presets hin und her</p>
+                <video width="620" height="350" controls>
+                    <source src="https://i.e-z.host/x0wt0j5p.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br><br>
+                
+                <h4>Failed to create Fiddler root certificate</h4>
+                <p>Klicke auf 'Ja', wenn das Fiddler Root Zertifikat angezeigt wird</p>
+                <p>Wenn das Zertifikat nicht mehr erscheint, gehe in das Unlocker Verzeichnis und lösche den Ordner 'cert'</p><br>
+                
+                <h4>Unerwarteter Parameterfehler</h4>
+                <p> Lösche das Unlocker Verzeichnis, starte dann den Loader erneut und gib den richtigen Pfad ein, wenn du dazu aufgefordert wirst</p><br>
+
+                <h4>Save Game Error</h4>
+                <p>Überprüfe deine Spieledateien</p><br>
+                
+            </section>
+        </div>
+    </div>
+    <div class="floating-language-button">
+        <button id="languageToggle" onclick="toggleLanguageOptions(event)">🌐 Sprache</button>
+        <div class="language-options" id="languageOptions">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('de')">Deutsch</button>
+        </div>
+    </div>
+    
+</body>
+</html>
